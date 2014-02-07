@@ -6,9 +6,7 @@ import java.util.Set;
 
 import org.apache.commons.lang.StringUtils;
 
-import redis.clients.jedis.Jedis;
 import redis.clients.jedis.exceptions.JedisException;
-
 
 public class Redis4JMSServer extends Redis4JClient {
 	
@@ -76,7 +74,7 @@ public class Redis4JMSServer extends Redis4JClient {
 	    	}
 	    }
 	    
-	    public void init(){
+	    public void start(){
 	        if(poolConfig == null || StringUtils.isBlank(masterServer))
 	            throw new RuntimeException("init jedisMSServer error");
 	        throwJedisException = true;
