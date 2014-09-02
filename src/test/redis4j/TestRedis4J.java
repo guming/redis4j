@@ -15,8 +15,8 @@ public class TestRedis4J {
 	 */
 	 public static void main(String args[]){
 		    List servers = new ArrayList();
-	        servers.add("10.1.200.80:6379:0");
-	        servers.add("10.1.200.81:6379:0");
+	        servers.add("127.0.0.1:6379:0");
+	        servers.add("127.0.0.1:6379:0");
 	        Redis4JHAServer server = new Redis4JHAServer();
 	        server.setServers(servers);
 	        server.setDoubleWrite(true);
