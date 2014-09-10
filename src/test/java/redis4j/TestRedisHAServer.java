@@ -1,4 +1,4 @@
-package test.redis4j;
+package redis4j;
 
 import java.util.ArrayList;
 import java.util.List;

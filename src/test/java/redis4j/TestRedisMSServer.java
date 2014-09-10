@@ -1,4 +1,4 @@
-package test.redis4j;
+package redis4j;
 
 import junit.framework.Assert;
 
